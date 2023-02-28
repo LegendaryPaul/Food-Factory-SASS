@@ -438,6 +438,14 @@ p {
   background-color: #ff9a1e;
   color: #fff;
 }
+.btn--dark {
+  background-color: #2d2d2d;
+  color: #fff;
+  border-color: #2d2d2d;
+}
+.btn--dark:hover {
+  background-color: #141414;
+}
 
 .header a {
   font-weight: bold;
@@ -519,6 +527,28 @@ p {
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.product__cards .product__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #ff9a1e;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.product__cards .product__item:hover::before {
+  width: 50%;
+  height: 15rem;
+}
+.product__cards .product__item:hover a {
+  background-color: #ff9a1e;
+  color: #fff;
+  transition: 0.5s ease;
 }
 .product__cards .product__item img {
   border-radius: 50%;
@@ -526,13 +556,115 @@ p {
   height: 20rem;
   margin: 0 auto 3rem;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product__cards .product__item a {
+  display: block;
+  text-align: center;
 }
 .product__cards .product__item .item__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .product__cards .product__item .item__info h3 {
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.product__cards .product__item .item__info h4 {
+  font-weight: bolder;
   font-size: 2rem;
+}
+.product__cards .product__item .item__info small {
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0.3;
+}
+.product__cards .product__item .item__review h4 {
+  font-size: 1.4rem;
+}
+.product__cards .product__item .item__review h4 i {
+  color: #ff9a1e;
+}
+
+.product__item.reverse::before {
+  left: unset;
+  right: 0;
+}
+
+.category__tab ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06);
+  max-width: 43rem;
+  width: 100%;
+  margin: 0 auto 6rem;
+}
+.category__tab ul li {
+  min-width: 7rem;
+}
+.category__tab ul li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3rem;
+}
+.category__tab ul li a:hover {
+  background-color: #ff9a1e;
+  color: #fff;
+}
+.category__tab ul li.active a {
+  background-color: #ff9a1e;
+  color: #fff;
+}
+
+.booking {
+  min-height: 50rem;
+  background-image: url(/img/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5rem, 5rem;
+  background-size: fill;
+}
+.booking__content {
+  background-color: #ff9a1e;
+  color: #fff;
+  height: 50rem;
+  width: 50%;
+  position: relative;
+  display: grid;
+  justify-content: flex-start;
+  place-items: center;
+}
+.booking__content::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 40vw;
+  background-color: #ff9a1e;
+}
+.booking__content .inner {
+  max-width: 40rem;
+  width: 100%;
+}
+.booking__content .inner small {
+  color: #2d2d2d;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.booking__content .inner h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: bold;
+  margin: 3rem 0;
+}
+.booking__content .inner p {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=main.css.map */
