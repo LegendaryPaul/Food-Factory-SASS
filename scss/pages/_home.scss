@@ -204,3 +204,89 @@
         }
     }
 }
+
+// services
+
+.services{
+    padding: 5rem 0;
+
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        margin-top: 10rem;
+        .services__item{
+            box-shadow: $shadow;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            i{
+                font-size: 4rem;
+                margin-bottom: 2rem;
+                color: $clr-primary;
+            }
+            h4{
+                color: $clr-primary;
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 1.5rem;
+            }
+            p{
+                text-align: center;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// testimonials
+
+.testimonials{
+    padding: 5rem 0;
+
+    .testi__card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        margin-top: 10rem;
+    }
+    .testi__cards{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: $shadow;
+        padding: 3rem 2rem;
+        img{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+        .testi__items{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2rem;
+
+            
+            .testi__name{
+                h4{
+                    font-weight: bolder;
+                    font-size: 2rem;
+                }
+                small{
+                    
+                    opacity: 0.5;
+                }
+                .stars{
+                    i{
+                        color: $clr-primary;
+                        font-size: 1.01rem;
+                    }
+                }
+            }
+            p{
+                max-width: 20rem;
+            }
+        }
+    }
+}
