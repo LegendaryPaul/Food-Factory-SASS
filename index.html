@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Factory</title>
-    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
@@ -34,6 +34,7 @@
         </div>
     </div>
 
+    <!-- BANNER -->
     <section class="banner">
         <div class="container">
             <div class="banner__wrapper d--flex justify--between align--center">
@@ -54,6 +55,7 @@
         </div>
     </section>
 
+    <!-- PRODUCT -->
     <section class="product py--6">
         <div class="container">
             <div class="block__header">
@@ -61,6 +63,7 @@
                 <h2>Our Best Selling <span>Products</span></h2>
             </div>
 
+            <!-- products -->
             <div class="product__cards">
                 <div class="product__item">
                     <img src="./img/salad.png" alt="">
@@ -138,6 +141,7 @@
         </div>
     </section>
 
+    <!-- CATEGORIES -->
     <section class="categories py--6">
         <div class="container">
             <div class="block__header">
@@ -155,6 +159,7 @@
                 </ul>
             </div>
 
+            <!-- products -->
             <div class="product__cards">
                 <div class="product__item reverse">
                     <img src="./img/burger.png" alt="">
@@ -302,8 +307,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 
+    <!-- BOOKING -->
     <section class="booking">
         <div class="container">
             <div class="booking__content">
@@ -317,100 +323,260 @@
         </div>
     </section>
 
-    <section class="services">
+    <!-- WORK -->
+    <section class="work py--6">
         <div class="container">
             <div class="block__header">
                 <span>Our Services</span>
                 <h2>How We <span>Work</span></h2>
             </div>
 
-            <div class="services__cards">
-                <div class="services__item">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h4>Easy To Order</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime quae molestias doloribus, corrupti impedit.</p>
+            <!-- order -->
+            <div class="work__wrapper">
+                <div class="work__card">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Easy To Order</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, neque? Optio, facere ex! Necessitatibus, consequatur quasi.</p>
                 </div>
-                <div class="services__item">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h4>Pick & Eat</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime quae molestias doloribus, corrupti impedit.</p>
+                <div class="work__card">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Pick & Eat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, neque? Optio, facere ex! Necessitatibus, consequatur quasi.</p>
                 </div>
-                <div class="services__item">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h4>Make Payment</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime quae molestias doloribus, corrupti impedit.</p>
+                <div class="work__card">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Easy Payment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, neque? Optio, facere ex! Necessitatibus, consequatur quasi.</p>
                 </div>
-                <div class="services__item">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <h4>Fastest Delivery</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime quae molestias doloribus, corrupti impedit.</p>
+                <div class="work__card">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Fastest Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, neque? Optio, facere ex! Necessitatibus, consequatur quasi.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- APP -->
+    <section class="app py--6">
+        <div class="container">
+            <div class="app__wrapper">
+                <div class="app__content">
+                    <h2>To Get Food Download <br>Our <span>Mobile App</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique expedita, fugit doloribus impedit minus a ipsum.</p>
+                    <a href="#" class="btn btn--dark">Google Play</a>
+                    <a href="#" class="btn btn--dark">Apple Store</a>
+                </div>
+                <div class="app__image">
+                    <img src="./img/phone(1).png" alt="phone">
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="testimonials">
+    
+    <!-- TESTIMONIALS -->
+    <section class="testimonials py--6">
         <div class="container">
             <div class="block__header">
                 <span>Testimonials</span>
                 <h2>What People Say <span>About</span></h2>
             </div>
 
-            <div class="testi__card">
-                <div class="testi__cards">
-                    <img src="./img/dummy.png" alt="">
-                    <div class="testi__items">
-                        <div class="testi__name">
-                            <h4>Paul Yamon</h4>
-                            <small>Owner</small>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+            <!-- owners -->
+            
+            <div class="testimonials__wrapper">
+                <div class="testimonials__card">
+                    <div class="testimonials__img">
+                        <div class="inner">
+                            <img src="./img/man.jpg" alt="man">
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, labore!</p>
+                    </div>
+                    <div class="testimonials__content">
+                        <h4>Lebron Wade</h4>
+                        <small>Owner</small>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates alias est commodi illo!</p>
                     </div>
                 </div>
-                
-                <div class="testi__cards">
-                    <img src="./img/dummy.png" alt="">
-                    <div class="testi__items">
-                        <div class="testi__name">
-                            <h4>Paul Yamon</h4>
-                            <small>Owner</small>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                <div class="testimonials__card">
+                    <div class="testimonials__img">
+                        <div class="inner">
+                            <img src="./img/man.jpg" alt="man">
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, labore!</p>
+                    </div>
+                    <div class="testimonials__content">
+                        <h4>Lebron Wade</h4>
+                        <small>Owner</small>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates alias est commodi illo!</p>
                     </div>
                 </div>
-                <div class="testi__cards">
-                    <img src="./img/dummy.png" alt="">
-                    <div class="testi__items">
-                        <div class="testi__name">
-                            <h4>Paul Yamon</h4>
-                            <small>Owner</small>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                <div class="testimonials__card">
+                    <div class="testimonials__img">
+                        <div class="inner">
+                            <img src="./img/man.jpg" alt="man">
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, labore!</p>
+                    </div>
+                    <div class="testimonials__content">
+                        <h4>Lebron Wade</h4>
+                        <small>Owner</small>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates alias est commodi illo!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- LETTER -->
+    <section class="newsletter py--6">
+        <div class="newsletter__wrapper">
+            <h2>Subscribe to our <span>Newsletter</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officiis amet numquam, laborum error reprehenderit!</p>
+            <form action="#">
+                <input type="email" placeholder="Enter Your Email Address">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq py--6">
+        <div class="container">
+            <div class="block__header">
+                <span>FAQ</span>
+                <h2>Frequently Asked <span>Questions</span></h2>
+            </div>
+
+            <!-- questions & answers -->
+            <div class="faq__block">
+                <div class="faq__question">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, reiciendis?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq__answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, perferendis!</p>
+                </div>
+            </div>
+            <div class="faq__block">
+                <div class="faq__question">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, reiciendis?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq__answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, perferendis!</p>
+                </div>
+            </div>
+            <div class="faq__block">
+                <div class="faq__question">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, reiciendis?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq__answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, perferendis!</p>
+                </div>
+            </div>
+            <div class="faq__block">
+                <div class="faq__question">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, reiciendis?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq__answer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, perferendis!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py--6">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <h3>Food <span>Factory</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem sit ea quaerat suscipit, unde sed pariatur.</p>
+                </div>
+                <div class="footer__item">
+                    <h3>Food Factory</h3>
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Get Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </footer>
+    <p class="copyright">Copyright&copy; Food Factory 2022 all Rights Reserve</p>
+
+    <script>
+        const hearts = document.querySelectorAll(".fa-heart");
+        hearts.forEach(heart => {
+            heart.addEventListener("click", () =>{
+                if(heart.classList.contains("fa-regular")){
+                    heart.classList.toggle("fa-regular");
+                    heart.classList.toggle("fas");
+                    heart.style.color = "#ff9a1e";
+                }else{
+                    heart.classList.toggle("fa-regular");
+                    heart.classList.toggle("fas");
+                    heart.style.color = "black";
+                }
+            })
+        })
+        // ------------------
+
+        const questions = document.querySelectorAll(".faq__question");
+        const answers = document.querySelectorAll(".faq__answer");
+
+        questions.forEach(question => {
+            question.addEventListener("click", () => {
+                question.nextElementSibling.classList.toggle("open");
+                question.classList.toggle("open");
+
+                
+            })
+        })
+    </script>
 </body>
 </html>
