@@ -14,9 +14,12 @@
     }
 
     &__nav{
-        
-        ul{
+        @include mediaQuery($mobile){
+            display: none;
+        }
 
+        ul{
+            
             li{
 
                 a{
