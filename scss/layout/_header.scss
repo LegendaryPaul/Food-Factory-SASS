@@ -1,40 +1,7 @@
 .header{
-    position: relative;
-    @include mediaQuery($mobile){
-        // width: 100%;
-        // position: fixed;
-        top: 0;
-    }
+    padding: 1.5rem 0;
     a{
         font-weight: bold;
-    }
-    .toggle__menu{
-        display: none;
-        @include mediaQuery($mobile){
-            display: block;
-            position: absolute;
-            right: 3rem;
-            transition: .8s ease-in-out;
-        }
-        span{
-            width: 3.5rem;
-            height: .3rem;
-            background-color: $clr-primary;
-            margin-bottom: .5rem;
-            border-radius: 4rem;
-            transition: 1s ease;
-            display: block;
-            position: a;
-        }
-        
-    }
-    .toggle__menu.open{
-        span:first-child{
-            transform: translateX(-1.5rem);
-        }
-        span:nth-child(2){
-            transform: translateX(-0.8rem);
-        }
     }
 
     .branding{
@@ -52,12 +19,14 @@
         top: 1rem;
         right: 3rem;
         font-size: 3rem;
+        cursor: pointer;
         @include mediaQuery($mobile){
             display: block;
         }
     }
     .btn__back{
         display: none;
+        cursor: pointer;
         @include mediaQuery($mobile){
             display: block;
         }
@@ -65,7 +34,6 @@
 
     &__nav{
         @include mediaQuery($mobile){
-<<<<<<< HEAD
             
             // display: none;
             position: fixed;
@@ -95,25 +63,6 @@
                         font-size: 2.5rem;
                     }
                 }
-=======
-            // display: none;
-            position: absolute; 
-            background-color: $clr-dark;
-            top: 0;
-            right: -100rem;
-            width: 50%;
-            height: 100vh;
-            transition: .7s ease-in-out;
-            ul{
-                flex-direction: column;
-                align-items: flex-start;
-                margin-left: 3rem;
-                margin-top: 5rem;
-            }
-            a{
-                
-            color: $clr-light;
->>>>>>> 4677cebbcf9f4b0b3a56086e4ac557b084e3b63b
             }
             
         }
@@ -147,9 +96,6 @@
                 }
                 
             }
-        }
-        &.open{
-            right: 0;
         }
     }
 }
