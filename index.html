@@ -18,13 +18,18 @@
                 <div class="branding">
                     <a href="#">Food <span>Factory</span></a>
                 </div>
+                <!-- button side nav -->
+                <button class="btn__show"><i class="fas fa-bars"></i></button>
                 
                 <!-- NAV -->
                 <nav class="header__nav py--1">
+                    <!-- button side nav -->
+                    <button class="btn__back"><i class="fas fa-arrow-left"></i></button>
+
                     <ul class="d--flex gap--4 align--center">
-                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="./index.html" class="active">Home</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Menu</a></li>
+                        <li><a href="./food-info.html">Our Menu</a></li>
                         <li><a href="#">Book Table</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#" class="btn btn--primary">Sign Up</a></li>
@@ -549,6 +554,7 @@
     </footer>
     <p class="copyright">Copyright&copy; Food Factory 2022 all Rights Reserve</p>
 
+    <script src="./script.js"></script>
     <script>
         const hearts = document.querySelectorAll(".fa-heart");
         hearts.forEach(heart => {

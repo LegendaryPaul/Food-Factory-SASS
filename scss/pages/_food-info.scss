@@ -1,0 +1,216 @@
+.info {
+
+    &__wrapper{
+        @include grid(2, 10rem);
+        @include mediaQuery($mobile){
+            @include grid(1, 2rem);
+        }
+        .info__images{
+
+            &__lg{
+                padding: 4rem;
+                border-radius: 2rem;
+                box-shadow: $shadow;
+                margin-bottom: 4rem;
+                background-color: $clr-light;
+                margin-bottom: 7rem;
+                transition: 1s ease;
+                text-align: center;
+                &:hover img{
+                    transform: scale(1.2);
+                }
+            }
+            &__variation{
+                @include grid(3, 2rem);
+                @include mediaQuery($mobile){
+                    @include grid(2, 5rem)
+                }
+                .thumbnail{
+                    padding: 2rem;
+                    background-color: $clr-light;
+                    border-radius: 2rem;
+                    box-shadow: $shadow;
+                    text-align: center;
+                    height: 10rem;
+                    
+                    h3{
+                        transform: translateY(-7.5rem);
+                    }
+                    img{
+                        border-radius: 50%;
+                        @include imgFit(10rem, 10rem);
+                        transform: translateY(-7rem);
+                    }
+                }
+            }
+
+        }
+        .info__content{
+
+            &__header{
+
+                h1{
+                    font-size: clamp(2rem, 6vw, 4rem);
+                }
+                .meta, ul{
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
+                    ul{
+                        gap: .5rem;
+                        li{
+                            i{
+                                color: $clr-primary;
+                                
+                            }
+                        }
+                        li:last-child i{
+                            color: #ccc;
+                        }
+                    }
+                    small{
+                        color: #ccc;
+                        font-size: 1.2rem;
+                    }
+                }
+                .prices{
+                    margin: 2rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include mediaQuery($mobile){
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    h2{
+                        font-size: 5rem;
+                        color: $clr-primary;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        color: lighten($clr-primary, 15);
+                        font-size: 2rem;
+                        text-decoration: line-through;
+                    }
+                    h3{
+                        font-size: 3rem;
+                        color: #ccc;
+                    }
+                }
+                
+            }
+            &__body{
+
+                h3{
+                    font-size: 2.5rem;
+                    margin-bottom: 2rem;
+                }
+                .sizes{
+                    display: flex;
+                    gap: 2rem;
+                    margin-bottom: 4rem;
+                    li{
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        background-color: #f5f5f5;
+                        color: #cacaca;
+                        font-weight: bold;
+                        @include centerAll;
+                        cursor: pointer;
+                        &.active{
+                            background-color: $clr-primary;
+                            color: $clr-light;
+                            box-shadow: 0 4px 10px rgba($clr-primary, .3);
+                        }
+                    }
+                }
+
+                .quantity{
+                    display: inline-flex;
+                    align-items: center;
+                    padding: .6rem 1.8rem;
+                    border-radius: 2rem;
+                    background-color: #f5f5f5;
+                    box-shadow: $shadow;
+                    border: 1px solid #cacaca;
+                    gap: 2rem;
+                    li{
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+                    li:first-child{
+                        color: #cacaca;
+
+                    }
+                }
+                .btn{
+                    margin: 3rem 0;
+                    display: block;
+                    cursor: pointer;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.related__foods{
+    padding: 6rem 0;
+    border-top: 1px solid #f5f5f5;
+    h3{
+        font-size: 2rem;
+        margin-bottom: 8rem;
+    }
+    &__wrapper{
+        // @include grid(6, 2rem);
+        
+        .related__foods__card{
+            padding: 2rem;
+            background-color: $clr-light;
+            border-radius: 2rem;
+            box-shadow: $shadow;
+            text-align: center;
+            height: 10rem;
+            margin: 0 1rem;
+            h3{
+                transform: translateY(-7.5rem);
+            }
+            img{
+                border-radius: 50%;
+                @include imgFit(10rem, 10rem);
+                transform: translateY(-7rem);
+            }
+        }
+    }
+    
+}
+
+.tns-inner {
+    height: 25rem;
+    // transform: translateY(37px);
+    transform: translateY(10rem);
+}
+.tns-outer{
+    position: relative;
+    .tns-controls{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        // top: 7rem;
+        top: 50%;
+        z-index: 99;
+        left: 0;
+        button{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            @include centerAll;
+            background-color: $clr-primary;
+            color: $clr-light;
+            font-size: 2rem;
+        }
+    }
+}
