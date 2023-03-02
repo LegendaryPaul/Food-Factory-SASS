@@ -8,34 +8,7 @@
     a{
         font-weight: bold;
     }
-    .toggle__menu{
-        display: none;
-        @include mediaQuery($mobile){
-            display: block;
-            position: absolute;
-            right: 3rem;
-            transition: .8s ease-in-out;
-        }
-        span{
-            width: 3.5rem;
-            height: .3rem;
-            background-color: $clr-primary;
-            margin-bottom: .5rem;
-            border-radius: 4rem;
-            transition: 1s ease;
-            display: block;
-            position: a;
-        }
-        
-    }
-    .toggle__menu.open{
-        span:first-child{
-            transform: translateX(-1.5rem);
-        }
-        span:nth-child(2){
-            transform: translateX(-0.8rem);
-        }
-    }
+   
 
     .branding{
         
